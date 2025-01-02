@@ -2,7 +2,8 @@ import { Link, Redirect } from 'expo-router'
 import { View, Text, SafeAreaView } from 'react-native'
 
 const App = () => {
-  return <Redirect href='./home'/>
+  // return <Redirect href='./home'/>
+  return <Redirect href='/tabs'/>
   // return (
   //   <SafeAreaView className='bg-white flex-1'>
   //     <View className='mt-6 mx-2.5'>
