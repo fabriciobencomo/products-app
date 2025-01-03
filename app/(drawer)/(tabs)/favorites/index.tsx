@@ -3,9 +3,9 @@ import React from 'react'
 
 const FavoritesScreen = () => {
   return (
-   <>
+   <View>
     <Text>Hola</Text>
-   </>
+   </View>
 )}
 
 export default FavoritesScreen

@@ -8,7 +8,18 @@ const DrawerLayout = () => {
   return (
     <Drawer 
       drawerContent={CustomDrawer}
-      screenOptions={{drawerActiveTintColor: 'indigo', overlayColor: 'rgba(0,0,0,0.4)', sceneStyle: {backgroundColor: 'white'}}}>
+      screenOptions={{drawerActiveTintColor: 'indigo', overlayColor: 'rgba(0,0,0,0.4)', headerShadowVisible: false, sceneStyle: {backgroundColor: 'white'}}}>
+      <Drawer.Screen
+        name="(tabs)" // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: 'Tabs + Stack',
+          title: 'tabs + stack',
+          headerShown: false,
+          drawerIcon: ({color, size}) => (
+            <Ionicons name='albums-outline' size={size} color={color}></Ionicons>
+          )
+        }}
+      />
       <Drawer.Screen
         name="user/index" // This is the name of the page and must match the url from root
         options={{
