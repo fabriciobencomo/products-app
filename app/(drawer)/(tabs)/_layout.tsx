@@ -25,6 +25,7 @@ const TabsLayout = () => {
         name="(stack)"
         options={{
           title: 'Profile',
+          headerShown: false,
           tabBarIcon: ({ color }) => <Ionicons size={28} name="person-outline" color={color} />,
         }}
       />
